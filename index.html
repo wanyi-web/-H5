@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    
+    <!-- <script src="js/flexable.js"></script> -->
+    <!-- 移动端适配 -->
+    <script>
+        var html = document.querySelector('html'); 
+        changeRem();
+        window.addEventListener('resize', changeRem);
+        function changeRem() {
+            var width = html.getBoundingClientRect().width;
+            html.style.fontSize = width / 10 + 'px';
+        }
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="logoDiv">
+            <div class="logo"></div>
+        </div>
+        <!--第一页-->
+        <div class="page1" style="display: none;">
+            <div class="one">
+                <div class="title">
+                    <p class="character">疯狂脑筋急转弯</p>
+                </div>
+            </div>
+            <div class="two">
+                <div class="centerDiv">
+                    <p class="character">点击你认为正确的答案猜对可赢大额红包</p>
+                </div>
+            </div>
+            <div class="three">
+                <div class="butDiv">
+                    <p class="character">开始答题</p>
+                </div>
+            </div>
+        </div>
+        <!--第二页-->
+        <div class="page2">
+            <div class="first">
+                <div class="title2">
+                    <p class="character">什么水不能喝</p>
+                </div>
+            </div>
+            <div class="second">
+                <div class="qus">
+                    <p class="qus-p p1"></p>
+                    <p class="qus-p p2"></p>
+                </div>
+                <div class="ans">
+                    <p class="ans-p">薪</p>
+                    <p class="ans-p">人</p>
+                    <p class="ans-p">向</p>
+                    <p class="ans-p">少</p>
+                    <p class="ans-p">水</p>
+                </div>
+            </div>
+            <div class="third">
+                <div class="butDiv2">
+                    <p class="character">确定</p>
+                </div>
+            </div>
+        </div>
+        <!--第三页-->
+
+
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
